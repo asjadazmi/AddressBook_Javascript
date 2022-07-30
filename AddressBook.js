@@ -112,10 +112,19 @@ class Contact{
     }
 }
 
+
+let addressBookArray = new Array();
+
 try{
-    let contact = new Contact("Asjad", "Azmi", "Madiwala", "Benglore", "Karnatka", "560068", "91 8748835815", "Asjadazmi@gmail.com")
-    console.log(contact.toString());
+    addressBookArray.push(new Contact("Asjad", "Azmi", "Madiwala", "Benglore", "Karnatka", "560068", "91 8748835812", "Asjadazmi@gmail.com"));
 }
 catch(e){
     console.log(e);
 }
+try{
+    addressBookArray.push(new Contact("Owais", "Arsalan", "Mango", "Jamshedpur", "Jharkhan", "740067", "91 9984568345", "owais@gmail.com"));
+}
+catch(e){
+    console.log(e);
+}
+console.log(addressBookArray);
